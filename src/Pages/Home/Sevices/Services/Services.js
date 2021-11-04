@@ -1,4 +1,4 @@
-import { Container } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import React from 'react';
@@ -76,6 +76,10 @@ const Services = () => {
     return (
         <Container>
         <Box sx={{ width: '100%' , margin:"60px 0px" }}>
+        <Box>
+          <Typography sx={{color:'#053f78' ,fontWeight:'700'}} variant='h6' >Our Services</Typography>
+          <Typography sx={{color:'#2c2c2c' ,fontWeight:'700', margin:'30px 0px'}} variant='h3' >Services We Provide</Typography>
+        </Box>
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           {
             servicesItem.slice(0,6).map(service => <Service key={service.id} service={service}></Service>)

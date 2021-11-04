@@ -6,6 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -25,7 +26,11 @@ const Header = () => {
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               Doc-Link
             </Typography>
+            <Link to='/appoinment'>
+              Appoinment
+            </Link>
             <Button color="inherit">Login</Button>
+            
           </Toolbar>
         </AppBar>
       </Box>
